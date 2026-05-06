@@ -1,0 +1,8 @@
+import qrcode
+QR=qrcode.QRCode()
+a="Jai Shree Rama!"
+QR.add_data(a)
+QR.make(fit=True)
+res=QR.make_image(fill_color="black",back_color="white")
+res.save("Jai Bharath.png")
+print("Created successfully")
