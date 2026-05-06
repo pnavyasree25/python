@@ -1,0 +1,8 @@
+def me(a):
+  if(a==5):
+    return 1
+  B=me(a+1)
+  print("HEY")
+  return B+2
+res=me(1)
+print(res)
